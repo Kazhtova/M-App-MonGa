@@ -28,7 +28,7 @@ export const transactionService = {
       
       console.log(`└──────────────────────────────────────────────────────────────┘\n`);
     } catch (error) {
-      console.log("Gagal membaca logger:", error);
+      console.log("Error:", error);
     }
   },
 
