@@ -40,7 +40,7 @@ function MainTabs({ route }) {
         name="Dashboard" 
         component={DashboardScreen} 
         initialParams={{ user }} 
-        options={{ title: 'KasKu' }} 
+        options={{ title: 'MonGa' }} 
       />
       <Tab.Screen 
         name="Profile" 

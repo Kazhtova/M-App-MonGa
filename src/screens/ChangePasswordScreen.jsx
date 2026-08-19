@@ -58,20 +58,14 @@ const PasswordInputField = ({ label, placeholder, helperText, value, onChangeTex
   );
 };
 
-// ---------------------------------------------------------
-// 2. MAIN SCREEN: Change Password Screen
-// ---------------------------------------------------------
 export default function ChangePasswordScreen({ route, navigation }) {
-  // Tangkap data user yang sedang login
   const { user = { id: 1, username: 'Guest' } } = route.params || {};
 
-  // State utama untuk logika backend
   const [oldPassword, setOldPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // LOGIKA UTAMA: VALIDASI & UPDATE PASSWORD DI SQLITE
   const handleChangePassword = async () => {
     if (!oldPassword || !newPassword || !confirmPassword) {
       Toast.show({
@@ -93,7 +87,7 @@ export default function ChangePasswordScreen({ route, navigation }) {
 
     setLoading(true);
     try {
-      const db = await SQLite.openDatabaseAsync('kasku.db');
+      const db = await SQLite.openDatabaseAsync('monga.db');
 
       const currentUserData = await db.getFirstAsync(
         'SELECT password FROM users WHERE id = ?', 
@@ -142,7 +136,6 @@ export default function ChangePasswordScreen({ route, navigation }) {
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
         className="flex-1"
       >
-        {/* HEADER */}
         <View className="flex-row items-center px-6 py-4 border-b border-slate-100 bg-slate-50">
           <TouchableOpacity onPress={() => navigation.goBack()} className="mr-4">
             <Ionicons name="arrow-back" size={24} color="#334155" />
@@ -152,17 +145,15 @@ export default function ChangePasswordScreen({ route, navigation }) {
           </Text>
         </View>
 
-        {/* SCROLLABLE CONTENT */}
         <ScrollView 
           contentContainerStyle={{ flexGrow: 1, padding: 24 }}
           showsVerticalScrollIndicator={false}
           keyboardShouldPersistTaps="handled"
         >
           <Text className="text-slate-500 text-sm leading-relaxed mb-8">
-            Pastikan password baru Anda kuat dan belum pernah digunakan sebelumnya untuk keamanan akun Anda.
+            Pastikan password baru Anda kuat dan wbelum pernah digunakan sebelumnya untuk keamanan akun Anda.
           </Text>
 
-          {/* Form Fields dengan State Terhubung */}
           <PasswordInputField 
             label="Password Saat Ini" 
             placeholder="Masukkan password saat ini" 
@@ -189,7 +180,6 @@ export default function ChangePasswordScreen({ route, navigation }) {
           />
         </ScrollView>
 
-        {/* FIXED BOTTOM BUTTON */}
         <View className="p-6 bg-slate-50">
           <TouchableOpacity 
             onPress={handleChangePassword}

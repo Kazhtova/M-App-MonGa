@@ -75,7 +75,7 @@ export default function FAQScreen({ navigation }) {
         </Text>
 
         <Text className="text-center text-slate-900 text-3xl font-extrabold mb-10 leading-tight">
-          Jawaban yang paling sering ditanyakan kepada kami
+          Pertanyaan yang paling sering ditanyakan kepada kami
         </Text>
 
         <View className="border-t border-slate-100">

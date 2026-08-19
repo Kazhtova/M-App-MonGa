@@ -5,7 +5,7 @@ export const formatDate = (dateString) => {
   return date.toLocaleDateString('id-ID', options);
 };
 
-// Fungsi pembantu untuk mendapatkan tanggal hari ini dengan format YYYY-MM-DD
+// Fungsi untuk tanggal hari ini dengan format YYYY-MM-DD
 export const getTodayDateString = () => {
   const today = new Date();
   const year = today.getFullYear();

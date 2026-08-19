@@ -4,7 +4,7 @@ let dbInstance = null;
 
 export const getDatabaseConnection = async () => {
   if (!dbInstance) {
-    dbInstance = await SQLite.openDatabaseAsync('kasku.db');
+    dbInstance = await SQLite.openDatabaseAsync('monga.db');
   }
   return dbInstance;
 };

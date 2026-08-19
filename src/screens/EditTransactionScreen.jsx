@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import { transactionService } from '../services/transactionService';
-// 🚀 1. Import Toast dan ConfirmModal
 import Toast from 'react-native-toast-message';
 import ConfirmModal from '../components/ConfirmModal';
 

@@ -6,7 +6,7 @@ export const transactionService = {
       const allData = await transactionRepository.getAll();
       
       console.log(`\n\n┌──────────────────────────────────────────────────────────────┐`);
-      console.log(`│ 🗄️  KASKU DATABASE LOGGER (Aksi: ${actionName.padEnd(20)}) │`);
+      console.log(`│ 🗄️  MONGA DATABASE LOGGER (Aksi: ${actionName.padEnd(20)}) │`);
       console.log(`├──────────────────────────────────────────────────────────────┤`);
       
       if (allData.length === 0) {

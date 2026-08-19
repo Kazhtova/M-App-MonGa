@@ -17,7 +17,6 @@ export default function ProfileScreen({ route, navigation }) {
 
   return (
     <View className="flex-1 bg-slate-50 p-6 items-center">
-      {/* Avatar & User Info */}
       <View className="w-24 h-24 bg-sky-100 rounded-full items-center justify-center mb-4 border-4 border-white shadow-sm mt-8">
         <Ionicons name="person" size={40} color="#0284c7" />
       </View>
@@ -25,11 +24,9 @@ export default function ProfileScreen({ route, navigation }) {
       <Text className="text-slate-800 text-2xl font-bold mb-1">
         {user?.username ? user.username.toUpperCase() : 'PENGGUNA'}
       </Text>
-      <Text className="text-slate-500 text-sm mb-8 font-medium">Pengguna KasKu</Text>
+      <Text className="text-slate-500 text-sm mb-8 font-medium">Pengguna MonGa</Text>
 
-      {/* --- MENU CARDS SECTION --- */}
       <View className="w-full flex-row justify-between mb-8">
-        {/* Tombol Keamanan */}
         <TouchableOpacity 
           className="flex-1 bg-white p-4 rounded-xl border border-slate-100 shadow-sm mr-2 active:bg-slate-50"
           onPress={() => navigation.navigate('ChangePassword', { user })}
@@ -41,7 +38,6 @@ export default function ProfileScreen({ route, navigation }) {
           <Text className="text-slate-500 text-xs">Atur PIN & Sandi</Text>
         </TouchableOpacity>
 
-        {/* Tombol Bantuan */}
         <TouchableOpacity 
           className="flex-1 bg-white p-4 rounded-xl border border-slate-100 shadow-sm ml-2 active:bg-slate-50"
           onPress={() => navigation.navigate('FAQScreen', { user })}
@@ -53,9 +49,7 @@ export default function ProfileScreen({ route, navigation }) {
           <Text className="text-slate-500 text-xs">FAQ & Dukungan</Text>
         </TouchableOpacity>
       </View>
-      {/* --------------------------- */}
 
-      {/* Logout Button */}
       <TouchableOpacity
         onPress={() => setLogoutModalVisible(true)}
         className="w-full bg-white p-4 rounded-xl flex-row justify-center items-center border border-rose-200 shadow-sm active:bg-rose-50"

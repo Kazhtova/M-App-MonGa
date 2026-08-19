@@ -56,7 +56,7 @@ export default function App() {
     return (
       <View className="flex-1 justify-center items-center bg-slate-100">
         <ActivityIndicator size="large" color="#0284c7" />
-        <Text className="mt-2 text-slate-600 font-medium">Menyiapkan Database KasKu...</Text>
+        <Text className="mt-2 text-slate-600 font-medium">Menyiapkan Database MonGa...</Text>
       </View>
     );
   }

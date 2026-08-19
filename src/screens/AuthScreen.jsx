@@ -20,7 +20,7 @@ const handleAuth = async () => {
   return (
     <SafeAreaView className="flex-1 bg-sky-600 justify-center px-6">
       <View className="items-center mb-10">
-        <Text className="text-white text-4xl font-extrabold tracking-widest mb-2">KasKu</Text>
+        <Text className="text-white text-4xl font-extrabold tracking-widest mb-2">MonGa</Text>
         <Text className="text-sky-100 text-sm text-center">
           Catat keuangan harianmu dengan mudah.
         </Text>
