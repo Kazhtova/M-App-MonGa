@@ -55,7 +55,7 @@ export const transactionService = {
   },
 
   async deleteTransaction(id) {
-    if (!id) throw new Error("ID transaksi wajib disertakan untuk menghapus.");
+    if (!id) throw new Error("ID transaksi wajib ada untuk menghapus.");
     const result = await transactionRepository.delete(id);
     await this.debugDatabase(`DELETE / HAPUS DATA ID: ${id}`); 
     return result;
