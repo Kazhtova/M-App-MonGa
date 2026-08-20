@@ -10,7 +10,7 @@ export const transactionService = {
       console.log(`├──────────────────────────────────────────────────────────────┤`);
       
       if (allData.length === 0) {
-        console.log("│ Status: Tabel 'transactions' masih kosong (0 baris).         │");
+        console.log("│ Status: Tabel transactions masih kosong (0 baris).         │");
       } else {
         console.log("│ ID  │ UID │ TIPE     │ NOMINAL      │ KETERANGAN             │");
         console.log("├─────┼─────┼──────────┼──────────────┼────────────────────────┤");
