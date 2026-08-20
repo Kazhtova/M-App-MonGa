@@ -35,7 +35,7 @@ export default function AddTransactionScreen({ route, navigation }) {
 
       navigation.goBack();
     } catch (error) {
-      Alert.alert("Gagal Validasi", error.message);
+      Alert.alert("Error: ", error.message);
     }
   };
 
