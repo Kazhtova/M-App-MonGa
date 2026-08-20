@@ -65,7 +65,7 @@ export const transactionService = {
     const { user_id, type, amount, description, transaction_date } = data;
 
     if (!user_id) {
-      throw new Error("Sistem menolak: user_id tidak ditemukan. Pastikan Anda sudah login.");
+      throw new Error("user_id tidak ditemukan. Pastikan Anda sudah login.");
     }
 
     if (!type || !['income', 'expense'].includes(type)) {
