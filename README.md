@@ -43,6 +43,8 @@ Sebelum menjalankan aplikasi, pastikan sistem lokal Anda telah terpasang:
    git clone [https://github.com/username-anda/nama-repo.git](https://github.com/username-anda/nama-repo.git)
    cd nama-repo
 
-npm install
-# atau jika menggunakan yarn:
-# yarn install
+**npm install**
+atau jika menggunakan yarn:
+**yarn install**
+
+**npx expo start**
