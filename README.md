@@ -48,3 +48,44 @@ atau jika menggunakan yarn:
 **yarn install**
 
 **npx expo start**
+
+
+# M-App-Kasku
+
+Aplikasi pencatatan keuangan pribadi (*expense & income tracker*) berbasis React Native (Expo) dengan arsitektur modular yang memisahkan komponen UI, *screens*, *repositories*, dan *business logic services*.
+
+---
+
+## Struktur Direktori
+
+```text
+├── assets/                          # Aset gambar, ikon, dan font bawaan Expo
+├── src/
+│   ├── components/                  # Komponen UI modular
+│   │   ├── ConfirmModal.jsx         # Modal konfirmasi aksi
+│   │   ├── SummaryCard.jsx          # Kartu ringkasan total pemasukan & pengeluaran
+│   │   └── TransactionItem.jsx      # Baris item riwayat transaksi
+│   ├── database/                    # Inisialisasi basis data lokal
+│   │   └── database.js              # Konfigurasi / skema koneksi database
+│   ├── navigation/                  # Manajemen routing & navigasi aplikasi
+│   │   └── AppNavigator.jsx         # Konfigurasi screen stack / bottom tabs
+│   ├── repositories/                # Abstraksi data layer (query & mutasi data)
+│   │   └── transactionRepository.js # Operasi CRUD data transaksi ke database
+│   ├── screens/                     # Tampilan halaman aplikasi
+│   │   ├── AddTransactionScreen.jsx # Halaman tambah transaksi baru
+│   │   ├── AuthScreen.jsx           # Halaman login / registrasi pengguna
+│   │   ├── ChangePasswordScreen.jsx # Halaman ganti kata sandi
+│   │   ├── DashboardScreen.jsx      # Layar utama ringkasan saldo & transaksi
+│   │   ├── EditTransactionScreen.jsx# Halaman ubah transaksi
+│   │   ├── FAQScreen.jsx            # Halaman bantuan / tanya jawab
+│   │   └── ProfileScreen.jsx        # Halaman profil pengguna & pengaturan
+│   ├── services/                    # Business logic layer
+│   │   ├── authService.js           # Layanan autentikasi & sesi pengguna
+│   │   └── transactionService.js    # Logika kalkulasi & proses transaksi
+│   └── utils/                       # Helper & fungsi utilitas
+│       ├── currency.js              # Pemformatan mata uang (Rupiah)
+│       ├── date.js                  # Pemformatan tanggal & waktu
+│       └── finance.js               # Perhitungan analitik & saldo keuangan
+├── App.js                           # Root component / entry point
+├── app.json                         # Konfigurasi Expo
+└── package.json                     # Metadata proyek & dependensi
