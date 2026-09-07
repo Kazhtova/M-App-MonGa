@@ -42,3 +42,7 @@ Sebelum menjalankan aplikasi, pastikan sistem lokal Anda telah terpasang:
    ```bash
    git clone [https://github.com/username-anda/nama-repo.git](https://github.com/username-anda/nama-repo.git)
    cd nama-repo
+
+npm install
+# atau jika menggunakan yarn:
+# yarn install
