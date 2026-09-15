@@ -50,7 +50,7 @@ atau jika menggunakan yarn:
 **npx expo start**
 
 
-# M-App-Kasku
+# M-App-MonGa
 
 Aplikasi pencatatan keuangan pribadi (*expense & income tracker*) berbasis React Native (Expo) dengan arsitektur modular yang memisahkan komponen UI, *screens*, *repositories*, dan *business logic services*.
 
