@@ -133,7 +133,6 @@ export default function ProfileScreen({ route, navigation }) {
         </TouchableOpacity>
       </View>
 
-      {/* MENU BARIS: EKSPOR CSV */}
       <TouchableOpacity
         onPress={handleExportCSV}
         disabled={isExporting}
