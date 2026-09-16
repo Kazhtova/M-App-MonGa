@@ -129,7 +129,7 @@ export default function EditTransactionScreen({ route, navigation }) {
         </TouchableOpacity>
 
         <TouchableOpacity
-          onPress={handleDelete} // 🚀 Sekarang hanya memicu Modal
+          onPress={handleDelete} 
           className="bg-rose-50 p-4 rounded-xl items-center border-2 border-rose-200 active:bg-rose-100"
         >
           <Text className="text-rose-600 font-bold text-base">Hapus Transaksi</Text>
@@ -143,9 +143,9 @@ export default function EditTransactionScreen({ route, navigation }) {
         message="Apakah kamu yakin ingin menghapus transaksi ini? Data yang dihapus tidak bisa dikembalikan ke sistem."
         confirmText="Hapus"
         cancelText="Batal"
-        isDestructive={true} // Tombol konfirmasi otomatis menjadi merah
-        onCancel={() => setDeleteModalVisible(false)} // Tutup modal jika klik Batal / Area luar
-        onConfirm={executeDelete} // Jalankan fungsi hapus jika klik Ya
+        isDestructive={true} 
+        onCancel={() => setDeleteModalVisible(false)} 
+        onConfirm={executeDelete} 
       />
     </ScrollView>
   );
