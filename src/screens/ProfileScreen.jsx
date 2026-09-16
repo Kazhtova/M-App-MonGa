@@ -108,7 +108,6 @@ export default function ProfileScreen({ route, navigation }) {
       </Text>
       <Text className="text-slate-500 text-sm mb-8 font-medium">Pengguna MonGa</Text>
 
-      {/* MENU GRID: KEAMANAN & BANTUAN */}
       <View className="w-full flex-row justify-between mb-4">
         <TouchableOpacity 
           className="flex-1 bg-white p-4 rounded-xl border border-slate-100 shadow-sm mr-2 active:bg-slate-50"
