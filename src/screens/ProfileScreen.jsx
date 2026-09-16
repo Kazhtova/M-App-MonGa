@@ -59,7 +59,6 @@ export default function ProfileScreen({ route, navigation }) {
 
       const csvContent = csvHeader + csvBody;
 
-      // Menggunakan File & Paths API modern bawaan expo-file-system
       const file = new File(Paths.document, `MonGa${Date.now()}.csv`);
       file.create();
       file.write(csvContent);
