@@ -20,4 +20,3 @@ export const calculateFinanceSummary = (transactions) => {
   };
 };
 
-// Akhir File
