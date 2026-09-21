@@ -10,3 +10,4 @@ export const formatRupiah = (amount) => {
   return isNegative ? `-Rp ${formatted}` : `Rp ${formatted}`;
 };
 
+// Akhir Kalimat
