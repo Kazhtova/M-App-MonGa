@@ -19,3 +19,5 @@ export const calculateFinanceSummary = (transactions) => {
     totalTransactions: transactions.length
   };
 };
+
+// Ini Akhir File
