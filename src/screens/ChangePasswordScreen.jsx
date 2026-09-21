@@ -173,7 +173,7 @@ export default function ChangePasswordScreen({ route, navigation }) {
           
           <PasswordInputField 
             label="Konfirmasi Password Baru" 
-            placeholder="Ketik ulang password baru" 
+            placeholder="Ketik ulang password baru jus" 
             value={confirmPassword}
             onChangeText={setConfirmPassword}
             editable={!loading}
