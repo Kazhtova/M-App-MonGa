@@ -12,8 +12,6 @@ Aplikasi pencatatan keuangan pribadi berbasis *mobile* untuk memantau arus kas h
 - **Riwayat Transaksi**: Daftar riwayat mutasi keuangan yang mudah ditinjau, diubah, maupun dihapus.
 - **Penyimpanan Lokal**: Penyimpanan data aman dan instan secara lokal di perangkat tanpa wajib koneksi internet setiap saat.
 
----
-
 ## Tech Stack
 
 | Komponen | Teknologi |
