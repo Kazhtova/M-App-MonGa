@@ -2,8 +2,6 @@
 
 Aplikasi pencatatan keuangan pribadi berbasis *mobile* untuk memantau arus kas harian (pemasukan dan pengeluaran) secara praktis, cepat, dan transparan. Proyek ini dibangun menggunakan **React Native** dengan **Expo** untuk mempermudah pengembangan dan pengujian langsung melalui perangkat seluler via Expo Go.
 
----
-
 ## Fitur Utama
 
 - **Catat Transaksi**: Tambah pengeluaran dan pemasukan lengkap dengan jumlah nominal, kategori, tanggal, serta catatan transaksi.
@@ -42,6 +40,7 @@ Sebelum menjalankan aplikasi, pastikan sistem lokal Anda telah terpasang:
    ```bash
    git clone [https://github.com/username-anda/nama-repo.git](https://github.com/username-anda/nama-repo.git)
    cd nama-repo
+
 
 **npm install**
 atau jika menggunakan yarn:
