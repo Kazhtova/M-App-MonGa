@@ -50,6 +50,7 @@ atau jika menggunakan yarn:
 
 **npx expo start**
 
+---
 
 # M-App-MonGa
 
