@@ -2,8 +2,6 @@
 
 Aplikasi pencatatan keuangan pribadi berbasis *mobile* untuk memantau arus kas harian (pemasukan dan pengeluaran) secara praktis, cepat, dan transparan. Proyek ini dibangun menggunakan **React Native** dengan **Expo** untuk mempermudah pengembangan dan pengujian langsung melalui perangkat seluler via Expo Go.
 
----
-
 ## Fitur Utama
 
 - **Catat Transaksi**: Tambah pengeluaran dan pemasukan lengkap dengan jumlah nominal, kategori, tanggal, serta catatan transaksi.
@@ -11,8 +9,6 @@ Aplikasi pencatatan keuangan pribadi berbasis *mobile* untuk memantau arus kas h
 - **Ringkasan Saldo (Dashboard)**: Visualisasi total pemasukan, total pengeluaran, serta sisa saldo secara *real-time*.
 - **Riwayat Transaksi**: Daftar riwayat mutasi keuangan yang mudah ditinjau, diubah, maupun dihapus.
 - **Penyimpanan Lokal**: Penyimpanan data aman dan instan secara lokal di perangkat tanpa wajib koneksi internet setiap saat.
-
----
 
 ## Tech Stack
 
