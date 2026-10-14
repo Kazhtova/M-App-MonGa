@@ -2,7 +2,7 @@
 
 Aplikasi pencatatan keuangan pribadi berbasis *mobile* untuk memantau arus kas harian (pemasukan dan pengeluaran) secara praktis, cepat, dan transparan. Proyek ini dibangun menggunakan **React Native** dengan **Expo** untuk mempermudah pengembangan dan pengujian langsung melalui perangkat seluler via Expo Go.
 
-
+---
 
 ## Fitur Utama
 
